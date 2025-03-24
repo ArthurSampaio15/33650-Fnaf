@@ -1,0 +1,281 @@
+:root {
+    --branco: #ffffff;
+    --laranja: #EB9B00;
+    --azul: #002F52;
+    --preto: #000000;
+    --cor-botao: lightblue;
+    --botao-animado: darkblue;
+    --marrom: #5e2c1c;
+    --cinza-rodape: #474646;
+}
+
+
+.container {
+    display: flex;
+    align-items: center;
+    margin-left: 45%;
+}
+
+.container__titulo {
+    margin-left: 28%;
+}
+
+.container {
+    color: white;
+    font-size: 1.5rem;
+    font-weight: 700;
+    border-right: 4px solid var(--laranja);
+    align-items: center;
+    width: 22ch;
+    overflow: hidden;
+    white-space: nowrap;
+    /* Evita quebra de linha*/
+    animation: blinkMarker 0.5s infinite,
+        typing 5s infinite steps(22);
+}
+
+.container span {
+    color: var(--blue);
+}
+
+/* Animação da piscada */
+@keyframes blinkMarker {
+    50% {
+        border-right-color: transparent;
+    }
+}
+
+/* animação de movimento */
+@keyframes typing {
+    0% {
+        width: 0;
+    }
+
+    40% {
+        width: 22ch;
+    }
+
+    60% {
+        width: 22ch;
+    }
+
+    100% {
+        width: 0;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .container__titulo {
+        font-weight: 400;
+        display: block;
+        color: var(--branco);
+    }
+
+    .container__titulo--negrito {
+        font-weight: 700;
+        color: var(--branco);
+    }
+}
+
+.container__titulo {
+    text-align: center;
+    font-size: 100px;
+}
+
+.container__titulo--negrito {
+    font-size: 100px;
+}
+
+.titulo {
+    color: var(--branco);
+    text-align: center;
+    margin-top: 50px;
+    font-size: 70px;
+}
+
+wrapper {
+    perspective: 3000px;
+}
+
+.posicao {
+    display: inline-block;
+    margin-top: 100px;
+    margin-bottom: 100px;
+}
+
+.card {
+    margin-left: 100px;
+    width: 360px;
+    height: 530px;
+    transform-style: preserve-3d;
+    transition: transform .8s ease-in-out;
+    cursor: pointer;
+    border: 1px solid var(--branco);
+    box-shadow: 5px 5px 10px var(--preto),
+        -5px -5px -10px var(--preto);
+    border-radius: 15px;
+}
+
+.card:hover {
+    transform: rotateY(180deg);
+}
+
+.front-page,
+.back-page {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    border-radius: 15px;
+}
+
+.front-page {
+    background-size: cover;
+}
+
+#imagem1 {
+    background-image: url("./Imagens/Fnaf1/Freddy.png");
+    background-position: center;
+}
+
+#imagem2 {
+    background-image: url("./Imagens/Fnaf1/Chica.png");
+    background-position: center;
+}
+
+#imagem3 {
+    background-image: url("./Imagens/Fnaf1/Bonnie.png");
+    background-position: center;
+}
+
+#imagem4 {
+    background-image: url("./Imagens/Fnaf1/Foxy.png");
+    background-position: center;
+}
+
+#imagem5 {
+    background-image: url("./Imagens/Fnaf1/Golden_Freddy.png");
+    background-position: center;
+}
+
+.card-info {
+    position: absolute;
+    bottom: 50px;
+    left: 100px;
+    color: var(--branco);
+    text-shadow: 2px 2px 6px var(--preto);
+    text-align: center;
+}
+
+.card-title {
+    font-style: 2rem;
+    font-weight: bold;
+    margin-right: 100px;
+}
+
+.card-subtitle {
+    font-size: 2rem;
+    margin-top: 5px;
+    margin-left: 30px;
+    color: var(--branco);
+}
+
+.back-page {
+    color: var(--branco);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transform: rotateY(180deg);
+}
+
+.card-content {
+    text-align: center;
+    padding: 10px;
+    max-width: 300px;
+}
+
+.card-content p {
+    font-size: 1.5rem;
+}
+
+.card-content h3 {
+    font-size: 2rem;
+    font-weight: bold;
+    margin-bottom: 30px;
+}
+
+.card-descripition {
+    font-size: 1rem;
+    color: var(--branco);
+    margin-bottom: 20px;
+    line-height: 1.6;
+}
+
+.card-button {
+    background-color: var(--branco);
+    color: var(--preto);
+    padding: 12px 24px;
+    font-size: 1rem;
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.card-button:hover {
+    background-color: transparent;
+    color: var(--branco);
+    border: 1px solid var(--preto);
+}
+
+body {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.773), rgba(0, 0, 0, 0.773)), url("./Imagens/Fnaf1/Salão.jpeg");
+    background-size: cover;
+    filter: brightness(0.7);
+}
+
+.descricao {
+    background-color: var(--preto);
+    padding-top: 15px;
+    display: flex;
+    justify-content: center;
+}
+
+.autor {
+    color: var(--branco);
+    font-size: 50px;
+    text-align: center;
+    padding-bottom: 30px;
+}
+
+.site {
+    text-decoration: none;
+}
+
+#meuBotao {
+    background-color: var(--preto);
+    color: var(--branco);
+    padding: 10px 20px;
+    margin: 50px 0px 0px 15px;
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    font-size: 20px;
+}
+
+#meuBotao:hover {
+    background-color: var(--branco);
+    color: var(--preto);
+}
+
+* {
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "five-nights-at-freddys";
+}
+
+@font-face {
+    font-family: 'five-nights-at-freddys';
+    src: url("./Fontes/five-nights-at-freddys.woff"), format("woff");
+}
