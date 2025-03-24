@@ -234,6 +234,10 @@ body {
     filter: brightness(0.7);
 }
 
+audio{
+    margin: 20px;
+}
+
 .descricao {
     background-color: var(--preto);
     padding-top: 15px;
