@@ -9,7 +9,6 @@
     --cinza-rodape: #474646;
 }
 
-
 .container {
     display: flex;
     align-items: center;
@@ -134,28 +133,53 @@ wrapper {
 }
 
 #imagem1 {
-    background-image: url("../img/fnaf1/freddy.png");
+    background-image: url("../img/fnaf2/toy_freddy.png");
     background-position: center;
 }
 
 #imagem2 {
-    background-image: url("../img/fnaf1/chica.png");
+    background-image: url("../img/fnaf2/toy_chica.png");
     background-position: center;
 }
 
 #imagem3 {
-    background-image: url("../img/fnaf1/bonnie.png");
+    background-image: url("../img/fnaf2/toy_bonnie.png");
     background-position: center;
 }
 
 #imagem4 {
-    background-image: url("../img/fnaf1/foxy.png");
+    background-image: url("../img/fnaf2/balloon_boy.png");
     background-position: center;
 }
 
 #imagem5 {
-    background-image: url("../img/fnaf1/golden_freddy.png");
+    background-image: url("../img/fnaf2/mangle.png");
+}
+
+#imagem6 {
+    background-image: url("../img/fnaf2/the_puppet.png");
+}
+
+#imagem7 {
+    background-image: url("../img/fnaf2/freddy.jpg");
+}
+
+#imagem8 {
+    background-image: url("../img/fnaf2/bonnie.jpg");
+}
+
+#imagem9 {
+    background-image: url("../img/fnaf2/chica.png");
     background-position: center;
+}
+
+#imagem10 {
+    background-image: url("../img/fnaf2/foxy.png");
+    background-position: center;
+}
+
+#imagem11 {
+    background-image: url("../img/fnaf2/golden_freddy.png");
 }
 
 .card-info {
@@ -229,7 +253,7 @@ wrapper {
 }
 
 body {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.773), rgba(0, 0, 0, 0.773)), url("../img/fnaf1/salao.jpeg");
+    background-image: linear-gradient(rgba(0, 0, 0, 0.773), rgba(0, 0, 0, 0.773)), url("../img/fnaf2/salao-fnaf2.jpg");
     background-size: cover;
     filter: brightness(0.7);
 }
